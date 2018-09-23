@@ -20,6 +20,8 @@ def self.all
   @@all 
 end
 
+def patients
+  @patients
 
 
 end
