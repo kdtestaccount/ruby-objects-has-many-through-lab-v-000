@@ -8,6 +8,7 @@ def initialize(name)
   @name = name
   @@all << self
   @appointments = []
+  @patientsarray = []
 end 
 
 def new_appointment(patient, date)
@@ -23,7 +24,7 @@ end
 def patients
   Appointments.all.select do |appointment|
       appointment.doctor == @name
-      @genrearray << song.genre
+        @genrearray << song.genre
     end 
   end
   @genrearray
