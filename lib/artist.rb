@@ -23,7 +23,7 @@ end
 def songs
   @@all.select do |item|
     if item.artist == self 
-      @songs << artist
+      @songs << item
     end 
   end 
   @songs
