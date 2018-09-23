@@ -10,8 +10,8 @@ def initialize(name)
 end 
 
 def new_appointment(date, patient)
-
-end
+  newappointment = Appointment(date, patient)
+end 
 
 
 
