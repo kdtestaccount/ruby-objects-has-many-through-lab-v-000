@@ -24,7 +24,8 @@ end
 
 def songs
   @@all.select do |song|
-    song.artist == self 
+    if song.artist == self 
+      song
   end 
 end
 
