@@ -15,7 +15,7 @@ end
 
 def songs 
   Song.all.select do |item|
-    if item.genre == @name 
+    item.genre == @name 
      @songs << item
     end 
   end
