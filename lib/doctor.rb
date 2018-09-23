@@ -22,7 +22,7 @@ def self.all
 end
 
 def patients
-  Appointment.all.select do |appointment|
+  Patient.all.select do |appointment|
       appointment.doctor == @name
         @patientsarray << appointment
   end
