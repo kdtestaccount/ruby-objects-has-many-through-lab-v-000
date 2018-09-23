@@ -23,11 +23,7 @@ def new_song(name, genre)
 end
 
 def songs
-  @@all.select do |song|
-    if song.artist == self 
-      song
-    end
-  end 
+@songs
 end
 
 def genres 
