@@ -27,7 +27,7 @@ end
 
 def genres 
   @songs.select do |song|
-      if !genrearray.include? song.genre
+      if !@genrearray.include? song.genre
       @genrearray << song.genre
     end 
   end
