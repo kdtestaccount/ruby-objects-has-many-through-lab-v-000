@@ -16,5 +16,8 @@ def songs
   
 end 
 
+def all 
+  @@all 
+end
 
 end
