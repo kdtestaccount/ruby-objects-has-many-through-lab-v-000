@@ -25,9 +25,8 @@ def patients
   Appointments.all.select do |appointment|
       appointment.doctor == @name
         @patientsarray << appointment
-    end 
   end
-  @genrearray
+  patientsarray
 end
 
 end
