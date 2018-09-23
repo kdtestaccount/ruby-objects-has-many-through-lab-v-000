@@ -2,7 +2,7 @@ class Artist
 
 @@all = []
 
-attr_accessor :genrearray, :name, :genre
+attr_accessor :genrearray, :name, :genre, :songs
 
 def initialize(name)
   @name = name
@@ -19,6 +19,7 @@ def new_song(name, genre)
   @name = name
   @genre = genre
   newsong = Song.new(self, name, genre)
+  @songs << newsong
 end
 
 def songs
