@@ -19,5 +19,7 @@ def new_appointment(doctor, date)
   @appointments << @new_appointment
   @new_appointment
 end
+
+
  
 end
