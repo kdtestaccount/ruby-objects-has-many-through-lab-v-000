@@ -10,4 +10,9 @@ def name
   @name
 end
 
+def songs 
+  
+end
+
+
 end
