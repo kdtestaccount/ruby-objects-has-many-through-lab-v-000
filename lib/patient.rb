@@ -24,10 +24,10 @@ end
 def doctors
   @appointments.select do |appointment|
       if !@doctorsarray.include? appointment.doctor
-      @patientsarray << appointment.patient
+      @doctorsarray << appointment.doctor
     end 
   end
-  @patientsarray
+  @doctorsarray
 end
  
 end
