@@ -21,11 +21,11 @@ def new_song(name, genre)
 end
 
 def songs
-  @@all.select do |item|
-    if item.name == @name
-      @songs << item
-    end 
-  end 
+  # @@all.select do |item|
+  #   if item.name == @name
+  #     @songs << item
+  #   end 
+  # end 
 end
 
 def genres 
