@@ -6,7 +6,7 @@ attr_accessor :genrearray, :name
 
 def initialize(name)
   @name = name
-  @@all << name
+  @@all << self
 end 
 
 
