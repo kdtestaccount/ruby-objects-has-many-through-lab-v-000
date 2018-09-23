@@ -26,7 +26,7 @@ def patients
       appointment.doctor == @name
         @patientsarray << appointment
   end
-  patientsarray
+  @patientsarray
 end
 
 end
