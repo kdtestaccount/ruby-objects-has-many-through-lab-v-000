@@ -22,20 +22,15 @@ def self.all
 end
 
 def patients
-  Patient.all.select do |appointment|
-      appointment.doctor == @name
-        @patientsarray << appointment
+  @appointments.select do |appointment|
+      if !@patientsarray.include? appointment.patient
+      @patientsarray << appointment.patient
+    end 
   end
   @patientsarray
 end
 
-  @appointments.select do |appointment|
-      if !@genrearray.include? song.genre
-      @genrearray << song.genre
-    end 
-  end
-  @genrearray
-end
+
 
 
 
