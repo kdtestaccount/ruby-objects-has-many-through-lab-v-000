@@ -15,10 +15,9 @@ def self.all
   @@all 
 end
   
-def new_song(name, genre)
-  @name = name
-  @genre = genre
-  newsong = Song.new(self, name, genre)
+def new_song
+
+  newsong = Song.new(self, @name, @genre)
   @songs << newsong
 end
 
