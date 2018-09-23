@@ -21,8 +21,8 @@ def self.all
 end
 
 def patients
-  @appointments.select do |appointment|
-      if !@genrearray.include? song.genre
+  Appointments.all.select do |appointment|
+      appointment.d
       @genrearray << song.genre
     end 
   end
