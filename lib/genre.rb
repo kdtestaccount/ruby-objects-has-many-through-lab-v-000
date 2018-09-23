@@ -16,7 +16,7 @@ def name
 end
 
 def songs 
-  Artist.all.select do |item|
+  Song.all.select do |item|
     item.genre == @name 
      @songs << item
   end
@@ -28,7 +28,7 @@ def self.all
 end
 
 def artists
-  Song.all.select do |item|
+  Artist.all.select do |item|
     item.genre == @name 
      @artists << item
   end
