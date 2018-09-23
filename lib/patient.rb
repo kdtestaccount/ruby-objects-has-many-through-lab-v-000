@@ -20,6 +20,13 @@ def new_appointment(doctor, date)
   @new_appointment
 end
 
-
+def doctors
+  @appointments.select do |appointment|
+      if !@patientsarray.include? appointment.patient
+      @patientsarray << appointment.patient
+    end 
+  end
+  @patientsarray
+end
  
 end
