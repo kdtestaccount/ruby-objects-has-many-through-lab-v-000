@@ -15,6 +15,7 @@ end
 
 def new_appointment(doctor, date)
   new_appointment = Appoitment.new(doctor, date)
-
+  new_appointment
+end
  
 end
