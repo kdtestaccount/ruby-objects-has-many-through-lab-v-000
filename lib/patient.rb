@@ -8,6 +8,7 @@ def initialize(name)
   @name = name
   @@all << self 
   @appointments = []
+  @doctorsarray = []
 end
 
 def self.all 
@@ -22,7 +23,7 @@ end
 
 def doctors
   @appointments.select do |appointment|
-      if !@patientsarray.include? appointment.patient
+      if !@doctorsarray.include? appointment.patient
       @patientsarray << appointment.patient
     end 
   end
