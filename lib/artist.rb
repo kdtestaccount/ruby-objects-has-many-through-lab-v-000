@@ -2,7 +2,7 @@ class Artist
 
 @@all = []
 
-attr_accessor :genrearray, :name
+attr_accessor :genrearray, :name, :genre
 
 def initialize(name)
   @name = name
