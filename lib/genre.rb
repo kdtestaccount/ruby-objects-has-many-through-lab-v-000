@@ -17,7 +17,6 @@ def songs
   Song.all.select do |item|
     item.genre == @name 
      @songs << item
-    end 
   end
   @songs
 end 
