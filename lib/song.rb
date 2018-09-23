@@ -11,6 +11,7 @@ attr_accessor :name, :artist, :genre
   end
   
   def all 
-    @@All
+    @@all
+  end
   
 end 
