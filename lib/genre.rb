@@ -14,7 +14,7 @@ def name
 end
 
 def songs 
-  @songs
+  Artist.genrearray
 end 
 
 def self.all 
