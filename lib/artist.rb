@@ -7,6 +7,7 @@ attr_accessor :genrearray, :name, :genre
 def initialize(name)
   @name = name
   @@all << self
+  @songs = []
 end 
 
 
