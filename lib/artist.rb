@@ -26,13 +26,13 @@ def songs
 end
 
 def genres 
-  # Song.all.select do |song|
-  #   if song.artist == self
-  #     if !genrearray.include? song.genre
-  #     @genrearray << song.genre
-  #   end 
-  #   end 
-  # end 
+  Song.all.select do |song|
+    if song.artist == self
+      if !genrearray.include? song.genre
+      @genrearray << song.genre
+    end 
+    end 
+  end 
 end
 
 
