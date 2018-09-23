@@ -26,6 +26,7 @@ def songs
   @@all.select do |song|
     if song.artist == self 
       song
+    end
   end 
 end
 
