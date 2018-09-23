@@ -5,6 +5,7 @@ class Artist
 attr_accessor :genrearray
 
 def initialize(name)
+  @name = name
   @@all << name
 end 
 
