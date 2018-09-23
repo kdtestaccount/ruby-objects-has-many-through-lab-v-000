@@ -16,7 +16,10 @@ end
 def songs 
   @@all.each do |item|
     if item.genre == @name 
-      <<
+     @songs << item
+    end 
+  end
+  @songs
 end 
 
 def self.all 
