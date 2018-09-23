@@ -29,7 +29,7 @@ def patients
   @patientsarray
 end
 
-  @songs.select do |song|
+  @appointments.select do |song|
       if !@genrearray.include? song.genre
       @genrearray << song.genre
     end 
