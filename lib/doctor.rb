@@ -10,7 +10,7 @@ def initialize(name)
 end 
 
 def new_appointment(patient, date)
-  @newappointment = Appointment(self, date, patient)
+  @newappointment = Appointment.new(self, date, patient)
   @newappointment
 end 
 
