@@ -1,6 +1,6 @@
 class Doctor 
 
-attr_accessor :name, :new_appointment
+attr_accessor :name, :newappointment
 
 @@all = []
 
