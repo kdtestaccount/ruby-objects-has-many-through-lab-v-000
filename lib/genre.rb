@@ -16,7 +16,7 @@ def name
 end
 
 def songs 
-  Song.all.select do |item|
+  Artist.all.select do |item|
     item.genre == @name 
      @songs << item
   end
