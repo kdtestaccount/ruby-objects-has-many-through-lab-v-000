@@ -27,7 +27,7 @@ end
 
 def genres 
   @songs.select do |song|
-    if song.artist == self
+    if song.genre == self
       if !genrearray.include? song.genre
       @genrearray << song.genre
     end 
