@@ -14,7 +14,7 @@ def name
 end
 
 def songs 
-  
+  @songs
 end 
 
 def self.all 
