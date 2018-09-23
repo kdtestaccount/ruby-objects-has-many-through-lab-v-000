@@ -2,12 +2,12 @@ class Genre
   
 attr_accessor :name
   
-def initialize(genre)
+def initialize(name)
+  @name = name
   
 end
 
-def name(name)
-  @name = name
+def name
 end
 
 end
