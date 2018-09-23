@@ -23,7 +23,7 @@ end
 
 def doctors
   @appointments.select do |appointment|
-      if !@doctorsarray.include? appointment.patient
+      if !@doctorsarray.include? appointment.doctor
       @patientsarray << appointment.patient
     end 
   end
