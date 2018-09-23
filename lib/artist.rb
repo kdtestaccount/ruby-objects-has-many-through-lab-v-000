@@ -17,7 +17,7 @@ end
   
 def new_song(name, genre)
   newsong = Song.new(self, @name, @genre)
-  @@all << newsong
+  # @@all << newsong
 end
 
 def songs
