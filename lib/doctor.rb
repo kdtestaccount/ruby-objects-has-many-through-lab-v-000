@@ -13,6 +13,7 @@ end
 def new_appointment(patient, date)
   @newappointment = Appointment.new(self, date, patient)
   @appointments << @newappointment
+  @newappointment
 end 
 
 def self.all 
