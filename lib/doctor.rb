@@ -13,7 +13,9 @@ def new_appointment(date, patient)
   newappointment = Appointment(date, patient)
 end 
 
-
+def self.all 
+  @@all 
+end
 
 
 
