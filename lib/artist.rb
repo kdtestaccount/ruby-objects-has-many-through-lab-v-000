@@ -23,7 +23,7 @@ def new_song(name, genre)
 end
 
 def songs
-  @songs
+  @@all
 end
 
 def genres 
