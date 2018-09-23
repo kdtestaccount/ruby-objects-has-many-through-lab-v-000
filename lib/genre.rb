@@ -14,7 +14,9 @@ def name
 end
 
 def songs 
-  Artist.genrearray
+  @@all.each do |item|
+    if item.genre == @name 
+      <<
 end 
 
 def self.all 
