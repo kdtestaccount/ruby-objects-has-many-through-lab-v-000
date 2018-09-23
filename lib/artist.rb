@@ -30,7 +30,8 @@ def genres
       if !genrearray.include? song.genre
       @genrearray << song.genre
     end 
-  end 
+  end
+  @genrearray
 end
 
 
