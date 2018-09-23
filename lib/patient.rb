@@ -14,6 +14,7 @@ def self.all
 end
 
 def new_appointment(doctor, date)
+  new_appointment = Appoitment.new(doctor, date)
 
  
 end
