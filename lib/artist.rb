@@ -7,7 +7,6 @@ attr_accessor :genrearray, :name, :genre, :songs
 def initialize(name)
   @name = name
   @@all << self
-  @songs = []
 end 
 
 
@@ -21,7 +20,12 @@ def new_song(name, genre)
 end
 
 def songs
-  # @@all
+  @@all.select do |artist|
+    if artist == self 
+      @songs << artist
+    end 
+  end 
+  songs
 end
 
 def genres 
