@@ -23,10 +23,9 @@ end
 def songs
   @@all.select do |item|
     if item.name == @name
-      item
+      @songs << item
     end 
   end 
-  @songs
 end
 
 def genres 
